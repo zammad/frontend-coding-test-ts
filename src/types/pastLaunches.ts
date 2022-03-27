@@ -1,4 +1,4 @@
-export interface PastLaunches {
+export interface PastLaunches{
     mission_name: string
     launch_site: {
       site_name_long: string
@@ -6,7 +6,7 @@ export interface PastLaunches {
     links: {
       article_link: string | null
       video_link: string | null
-      flickr_images: []
+      flickr_images: string[]
     }
     launch_date_local: string
     launch_success: boolean

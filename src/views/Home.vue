@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="flex justify-center">
+  <div class="flex justify-center bg-white">
     <div class="justify-center max-w-md mt-10">
       <h1 class="font-extrabold tracking-tigh text-3xl leading-10">
         Ready for the challenge?

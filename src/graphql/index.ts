@@ -1,7 +1,7 @@
 import { gql } from "graphql-tag"
 
-export const GET_ROCKET_INFO = gql`
-query pastLaunchesList($limit: Int!) {
+export const GET_PAST_LAUNCHES_INFO = gql`
+query pastLaunchesList {
     launchesPast(limit: 10) {
     mission_name
     launch_site {
