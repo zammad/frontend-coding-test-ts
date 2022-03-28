@@ -13,8 +13,17 @@ const mainRoutes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
-    props: true,
     component: Home,
+  },
+  {
+    path: '/conference',
+    name: 'ConferenceList',
+    component: () => import('../views/Conferences/ConferenceList.vue'),
+  },
+  {
+    path: '/conference/:id',
+    name: 'ConferencePage',
+    component: () => import('../views/Conferences/ConferencePage.vue'),
   },
 ]
 
@@ -23,12 +32,10 @@ const routes: RouteRecordRaw[] = [
     path: '/error',
     alias: '/:pathMatch(.*)*',
     name: 'Error',
-    props: true,
     component: Error,
   },
   {
     path: '/',
-    props: true,
     component: LayoutMain,
     children: mainRoutes,
   },
