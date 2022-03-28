@@ -16,7 +16,7 @@ const modules = [Navigation]
     <p class="text-base font-normal">Launch Date: ozumba.substr(0, 10)</p>
     <p class="text-base font-normal">Launch Site: ozumba.substr(0, 10)</p>
     <p class="text-base font-normal">Articles:</p>
-    <a href="#" v-for="n in 3">art {{n}}</a>
+    <p><a href="#" v-for="n in 3">art {{n}}</a></p>
     <p class="text-base font-normal">Videos:</p>
     <Swiper :modules="modules" navigation :slides-per-view="4" :space-between="30">
         <SwiperSlide v-for=" n in 12">
