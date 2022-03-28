@@ -36,7 +36,7 @@ const swiperOptions = {
   <div class="body h-screen">
     <header class="h-2/6"></header>
     <!-- <Loader v-if="loading" /> -->
-    <main class="mx-auto w-full md:max-w-5xl h-4/6 px-3 sm:px-0">
+    <main class="mx-auto w-full h-4/6 px-3 sm:px-28">
       <swiper
         class="swiper w-full h-72"
         :modules="modules"

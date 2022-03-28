@@ -4,7 +4,10 @@ import { PastLaunches } from '../types/pastLaunches'
 // interface Props {
 //   launchDetails: PastLaunches
 // }
+// const props = defineProps<Props>()
 const props = defineProps(['launchDetails'])
+
+// custom image for missions without flickr_images
 const flickr_images = [
   'https://live.staticflickr.com/65535/50618376646_8f52c31fc4_o.jpg',
   'https://live.staticflickr.com/65535/50618376731_43ddaab1b8_o.jpg',
@@ -24,10 +27,12 @@ const flickr_images = [
   'https://live.staticflickr.com/65535/50617626738_aa3997aaea_o.jpg',
   'https://live.staticflickr.com/65535/50617626408_fb0bba0f89_o.jpg',
 ]
+
 // Function is used for missions without preview images
 const getRandomImage = () => {
   return Math.floor(Math.random() * flickr_images.length)
 }
+
 </script>
 <template>
   <div
