@@ -14,16 +14,28 @@ query pastLaunchesList {
 }
 `
 
-export const GET_LAUNCHES_QUERY = gql`
+export const GET_LAUNCHES_DETAILS = gql`
     query launchDetails($id: ID!) {
   launch(id: $id) {
-    id
-    mission_name
-    details
     links {
       flickr_images
-      mission_patch
+      article_link
+      video_link
     }
+    launch_success
+    launch_site {
+      site_name_long
+    }
+    launch_date_local
+    rocket {
+      rocket_name
+      rocket {
+        active
+        description
+      }
+    }
+    details
+    mission_name
   }
 }
 `

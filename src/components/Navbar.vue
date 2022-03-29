@@ -20,10 +20,10 @@
                 >Home</router-link
               >
               <router-link
-                to="/taskOne"
+                to="/task"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 exact-active-class="bg-gray-900 text-white"
-                >Task One</router-link
+                >Task</router-link
               >
             </div>
           </div>

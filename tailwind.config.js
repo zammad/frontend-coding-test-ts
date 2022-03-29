@@ -4,16 +4,13 @@ module.exports = {
     extend: {
       colors: {
         base: {
-          purple: {
-            900: "#431044",
-            500: "#96489C"
-          },
           white: "#F2F2F2",
-          orange: {
-            900: "#D88F28",
-            500: "#F2B705"
-          }
+          dark: "#111827",
         }
+      },
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"],
+        spacex: ["Courgette", "cursive"],
       }
     },
   },

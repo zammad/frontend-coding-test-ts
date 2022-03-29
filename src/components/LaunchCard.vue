@@ -1,11 +1,10 @@
 <script lang="ts" setup>
 import { PastLaunches } from '../types/pastLaunches'
 
-// interface Props {
-//   launchDetails: PastLaunches
-// }
-// const props = defineProps<Props>()
-const props = defineProps(['launchDetails'])
+interface Props {
+  launchDetails: PastLaunches
+}
+const props = defineProps<Props>()
 
 // custom image for missions without flickr_images
 const flickr_images = [

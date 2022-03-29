@@ -8,7 +8,7 @@ import {
 import LayoutMain from '../components/layout/LayoutMain.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
-import TaskOneVue from '../views/TaskOne.vue'
+import TaskVue from '../views/Task.vue'
 import LaunchDetails from '../views/_id/launchDetails.vue'
 
 const mainRoutes: RouteRecordRaw[] = [
@@ -19,9 +19,9 @@ const mainRoutes: RouteRecordRaw[] = [
     component: Home,
   },
   {
-    path: '/taskOne',
-    name: 'TaskOne',
-    component: TaskOneVue,
+    path: '/task',
+    name: 'Task',
+    component: TaskVue,
   },
   {
     path: '/:id/launchDetails',
