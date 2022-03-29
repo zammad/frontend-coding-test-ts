@@ -31,8 +31,9 @@ const swiperOptions = {
     },
   },
 }
+console.log(error.value?.message)
 const toast = useToast()
-if(error.value?.message !== ""){
+if(error.value?.message !== undefined){
   toast.error({
     timeout: 2000,
     closeOnClick: true,
