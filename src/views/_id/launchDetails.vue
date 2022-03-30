@@ -58,7 +58,7 @@ if(error.value?.message !== undefined){
 </script>
 <template>
   <Loader v-if="loading" />
-  <div v-else class="px-6 sm:px-16 md:px-28 bg-base-dark text-white">
+  <div v-else class="px-6 sm:px-16 md:px-28 bg-base-dark text-white launch-details">
     <header
       class="h-56 rounded-b-md overflow-clip shadow-2xl shadow-dark-900 grid place-items-center"
     >
@@ -76,21 +76,21 @@ if(error.value?.message !== undefined){
     <main class="pb-10">
       <div class="details">
         <div>
-          <p class="text-3xl font-semibold">{{ launchDetails.mission_name }}</p>
-          <p class="text-base font-normal pb-4">{{ launchDetails.details }}</p>
-          <p class="text-base font-semibold pb-2">
+          <p class="text-3xl font-semibold" data-cy="mission_name">{{ launchDetails.mission_name }}</p>
+          <p class="text-base font-normal pb-4" data-cy="launch_details">{{ launchDetails.details }}</p>
+          <p class="text-base font-semibold pb-2" data-cy="launch_date">
             Launch Date:
             <span class="font-normal">{{
               launchDetails.launch_date_local.substring(0, 10)
             }}</span>
           </p>
-          <p class="text-base font-semibold pb-3">
+          <p class="text-base font-semibold pb-3" data-cy="launch_site">
             Launch Site:
             <span class="font-normal">{{
               launchDetails.launch_site.site_name_long
             }}</span>
           </p>
-          <p class="text-base font-semibold pb-3">
+          <p class="text-base font-semibold pb-3" data-cy="mission_success">
             Mission success:
             <span class="font-normal">{{
               launchDetails.launch_success ? 'Success' : 'Failed'
@@ -98,19 +98,19 @@ if(error.value?.message !== undefined){
           </p>
         </div>
         <div>
-          <p class="text-base font-semibold pb-3">
+          <p class="text-base font-semibold pb-3" data-cy="rocket_name">
             Rocket Name:
             <span class="font-normal">{{
               launchDetails.rocket.rocket_name
             }}</span>
           </p>
-          <p class="text-base font-semibold pb-3">
+          <p class="text-base font-semibold pb-3" data-cy="rocket_description">
             Rocket Description:
             <span class="font-normal">{{
               launchDetails.rocket.rocket.description
             }}</span>
           </p>
-          <p class="text-base font-semibold pb-3">
+          <p class="text-base font-semibold pb-3" data-cy="rocket_status">
             Rocket Status:
             <span class="font-normal">{{
               launchDetails.rocket.rocket.active ? 'Active' : 'Inactive'

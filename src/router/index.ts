@@ -46,6 +46,8 @@ const routes: RouteRecordRaw[] = [
   },
 ]
 
+export {routes}
+
 export default function initializeRouter(app: App): Router {
   const router: Router = createRouter({
     history: createWebHistory(),

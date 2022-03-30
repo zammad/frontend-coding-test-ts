@@ -44,7 +44,7 @@ const getRandomImage = () => {
           flickr_images[getRandomImage()]
         "
         class="w-full h-full"
-        alt=""
+        alt="Launch Image"
       />
     </div>
     <div class="details text-left text-black p-3">
