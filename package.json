@@ -8,9 +8,7 @@
     "preview": "vite preview",
     "lint": "vue-tsc --noEmit && eslint -c .eslintrc.js --ext .js,.ts,.vue src/",
     "lint:fix": "npm run lint -- --fix",
-    "test": "vitest ",
-    "coverage": "vitest --coverage",
-    "test:ui": "vitest --ui"
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",
