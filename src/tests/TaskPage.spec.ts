@@ -13,12 +13,13 @@ describe('Task component mounts', () => {
     cy.get(".body").find("p").first().click()
     cy.location("pathname").should("eq","/")
   })
-  it("should contain a launch card in a swiper carousel component",() => {
+  it("should contain 10 launch cards in a swiper carousel component",() => {
     mount(Task)
     const swiper = mount(Swiper)
     const slides = mount(SwiperSlide)
-    mount(LaunchCardVue)
+    const launchCard = mount(LaunchCardVue)
     swiper.should("contain",slides)
+    slides.should("contain",launchCard)
     slides.should("have.length.at.least",10)
   })
 })

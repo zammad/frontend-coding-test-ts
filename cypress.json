@@ -1,8 +1,7 @@
 {
-    "testFiles": "cypress/integration/*.spec.js",
     "component": {
       "componentFolder": "src",
-      "testFiles": "**/*.spec.{js,jsx,ts,tsx}"
+      "testFiles": "**/*.spec.ts"
     }
   }
   
