@@ -19,7 +19,5 @@ describe('LaunchCard component mounts', () => {
       },
     })
     cy.get(".details").find(".learn-more")
-    
-    
   })
 })
