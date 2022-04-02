@@ -20,7 +20,6 @@ describe('LaunchCard component mounts', () => {
     })
     cy.get(".details").find(".learn-more")
     
-    // cy.get("div.card")
-    // cy.get(".card>div>h5>span").should("contain.text", "Mission")
+    
   })
 })
