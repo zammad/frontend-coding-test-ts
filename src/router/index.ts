@@ -8,6 +8,8 @@ import {
 import LayoutMain from '../components/layout/LayoutMain.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
+import TaskVue from '../views/Task.vue'
+import LaunchDetails from '../views/_id/launchDetails.vue'
 
 const mainRoutes: RouteRecordRaw[] = [
   {
@@ -16,6 +18,16 @@ const mainRoutes: RouteRecordRaw[] = [
     props: true,
     component: Home,
   },
+  {
+    path: '/task',
+    name: 'Task',
+    component: TaskVue,
+  },
+  {
+    path: '/:id/launchDetails',
+    name: 'LaunchDetails',
+    component: LaunchDetails,
+  }
 ]
 
 const routes: RouteRecordRaw[] = [
@@ -33,6 +45,8 @@ const routes: RouteRecordRaw[] = [
     children: mainRoutes,
   },
 ]
+
+export {routes}
 
 export default function initializeRouter(app: App): Router {
   const router: Router = createRouter({
