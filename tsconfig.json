@@ -13,7 +13,7 @@
     "lib": ["esnext", "dom"],
     "types": ["vitest/globals"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/tests/navbar.test.ts", "src/tests/components/launchCard.test.js"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/tests/navbar.test.ts", "src/tests/components/launchCard.test.js", "src/graphql/graphql-test-utils.ts"],
   "exclude": ["node_modules", "public"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

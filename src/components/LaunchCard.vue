@@ -40,7 +40,6 @@ const getRandomImage = () => {
     <div class="image w-full h-40">
       <img
         :src="
-          props.launchDetails.links.flickr_images[0] ??
           flickr_images[getRandomImage()]
         "
         class="w-full h-full"
@@ -51,7 +50,7 @@ const getRandomImage = () => {
         <h5 class="text-lg font-semibold"><span class="animate-pulse">Mission</span> {{ props.launchDetails.mission_name ?? ""}}</h5>
         <p class="text-sm pb-2">{{ props.launchDetails.launch_year ?? "" }}</p>
         <p class="text-sm pb-2 absolute bottom-2 left-2">{{ props.launchDetails.launch_success ? 'Successful⚡🔥' : 'Failed🚧' ?? "" }}</p>
-      <router-link class="bg-black absolute bottom-2 right-2 text-white text-sm p-2 py-1 rounded-md" :to="`/${props.launchDetails.id ?? '100'}/launchDetails`">Learn more</router-link>
+      <router-link class="learn-more bg-black absolute bottom-2 right-2 text-white text-sm p-2 py-1 rounded-md" :to="`/${props.launchDetails.id ?? '100'}/launchDetails`">Learn more</router-link>
     </div>
   </div>
 </template>
