@@ -15,13 +15,13 @@
             <div class="flex space-x-4 nav-links">
               <router-link
                 to="/"
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="home text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 exact-active-class="bg-gray-900 text-white"
                 >Home</router-link
               >
               <router-link
                 to="/task"
-                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="task text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 exact-active-class="bg-gray-900 text-white"
                 >Task</router-link
               >

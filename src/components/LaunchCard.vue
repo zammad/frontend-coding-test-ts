@@ -48,10 +48,10 @@ const getRandomImage = () => {
       />
     </div>
     <div class="details text-left text-black p-3">
-        <h5 class="text-lg font-semibold"><span class="animate-pulse">Mission</span> {{ props.launchDetails.mission_name }}</h5>
-        <p class="text-sm pb-2">{{ props.launchDetails.launch_year }}</p>
-        <p class="text-sm pb-2 absolute bottom-2 left-2">{{ props.launchDetails.launch_success ? 'Successful⚡🔥' : 'Failed🚧' }}</p>
-      <router-link class="bg-black absolute bottom-2 right-2 text-white text-sm p-2 py-1 rounded-md" :to="`/${props.launchDetails.id}/launchDetails`">Learn more</router-link>
+        <h5 class="text-lg font-semibold"><span class="animate-pulse">Mission</span> {{ props.launchDetails.mission_name ?? ""}}</h5>
+        <p class="text-sm pb-2">{{ props.launchDetails.launch_year ?? "" }}</p>
+        <p class="text-sm pb-2 absolute bottom-2 left-2">{{ props.launchDetails.launch_success ? 'Successful⚡🔥' : 'Failed🚧' ?? "" }}</p>
+      <router-link class="bg-black absolute bottom-2 right-2 text-white text-sm p-2 py-1 rounded-md" :to="`/${props.launchDetails.id ?? '100'}/launchDetails`">Learn more</router-link>
     </div>
   </div>
 </template>
