@@ -8,6 +8,8 @@ import {
 import LayoutMain from '../components/layout/LayoutMain.vue'
 import Error from '../views/Error.vue'
 import Home from '../views/Home.vue'
+import Characters from '../views/Characters.vue'
+import CharacterDetails from '../views/_id/characterDetails.vue'
 
 const mainRoutes: RouteRecordRaw[] = [
   {
@@ -15,6 +17,18 @@ const mainRoutes: RouteRecordRaw[] = [
     name: 'Home',
     props: true,
     component: Home,
+  },
+  {
+    path: '/characters',
+    name: 'Characters',
+    props: true,
+    component: Characters,
+  },
+  {
+    path: '/:id/characterDetails',
+    name: 'CharacterDetails',
+    props: true,
+    component: CharacterDetails,
   },
 ]
 
